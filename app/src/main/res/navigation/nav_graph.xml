@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.newsapp.Fragments.HomeFragment"
+        android:label="homefragment_layout"
+        tools:layout="@layout/homefragment_layout" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailedFragment"
+            app:destination="@id/detailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailedFragment"
+        android:name="com.example.newsapp.Fragments.DetailedFragment"
+        android:label="detailedfragment_layout"
+        tools:layout="@layout/detailedfragment_layout" />
+    <fragment
+        android:id="@+id/exploreFragment2"
+        android:name="com.example.newsapp.Fragments.ExploreFragment"
+        android:label="explorefragment_layout"
+        tools:layout="@layout/explorefragment_layout" >
+        <action
+            android:id="@+id/action_exploreFragment_2to_newsFragment2"
+            app:destination="@id/newsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouritesFragment2"
+        android:name="com.example.newsapp.Fragments.FavouritesFragment"
+        android:label="favouritesfragment_layout"
+        tools:layout="@layout/favouritesfragment_layout" >
+        <action
+            android:id="@+id/action_favouritesFragment2_to_detailedFragment"
+            app:destination="@id/detailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment2"
+        android:name="com.example.newsapp.Fragments.NewsFragment"
+        android:label="newsfragment_layout"
+        tools:layout="@layout/newsfragment_layout">
+        <action
+            android:id="@+id/action_newsFragment_2to_detailedFragment"
+            app:destination="@id/detailedFragment" />
+    </fragment>
+</navigation>
